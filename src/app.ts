@@ -53,7 +53,6 @@ const showData = (dataResponse: TableProps[]) => {
  */
 const fetchTableData = () => {
   disableBtn();
-
   loader("block");
 
   fetch(`${ApiUrl}&page=${page}`)
