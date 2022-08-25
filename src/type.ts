@@ -4,6 +4,3 @@ export type TableProps= {
   gender: string;
   row: number;
 };
-export type Loader ={
-    display: 'none' | 'block'
-}

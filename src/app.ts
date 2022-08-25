@@ -8,6 +8,9 @@ const ageOfUsers = document.querySelectorAll(".age");
 const genderOfUsers = document.querySelectorAll(".gender");
 const tableRow = document.querySelectorAll(".table-row");
 const label = document.querySelector("label");
+const previousButton = document.querySelector(".prev-btn");
+const nextButton = document.querySelector(".next-btn");
+
 
 let page = 1;
 /**
@@ -41,7 +44,7 @@ const showData = (dataResponse: TableProps[]) => {
     genderOfUsers[key].textContent = ` ${dataResponse[key].gender}`;
     ageOfUsers[key].textContent = ` ${dataResponse[key].age}`;
   });
-  label.textContent = `Showing Page ${page}`;
+  label.textContent = `page ${page}`;
 };
 
 
@@ -82,19 +85,18 @@ const prevNextBtn = (type: string) => {
     fetchTableData();
   }
 };
-fetchTableData();
-const startApp = async () => {
-   fetchTableData();
-
-  /* Listening for a click event on the previous button and then calling the prevNextBtn function with
+ /* Listening for a click event on the previous button and then calling the prevNextBtn function with
   the argument "prev". */
-  const previousButton = document.querySelector(".prev-btn");
   previousButton.addEventListener("click", () => prevNextBtn("prev"));
 
  /* Listening for a click event on the next button and then calling the prevNextBtn function with the
  argument "next". */
-  const nextButton = document.querySelector(".next-btn");
   nextButton.addEventListener("click", () => prevNextBtn("next"));
+
+fetchTableData();
+
+const startApp = async () => {
+  fetchTableData();
 };
 
 document.addEventListener("DOMContentLoaded", startApp);
