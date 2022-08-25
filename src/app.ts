@@ -60,7 +60,6 @@ const fetchTableData = () => {
     .then((data) => {
       loader("none");
       const results = data.results[0];
-      console.log(results)
       const dataResponse = Object.values(results)[0];
       showData(dataResponse as TableProps[]);
     })
