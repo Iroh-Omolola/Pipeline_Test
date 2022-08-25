@@ -44,7 +44,7 @@ const showData = (dataResponse: TableProps[]) => {
     genderOfUsers[key].textContent = ` ${dataResponse[key].gender}`;
     ageOfUsers[key].textContent = ` ${dataResponse[key].age}`;
   });
-  label.textContent = `page ${page}`;
+  label.textContent = `Showing Page ${page}`;
 };
 
 
