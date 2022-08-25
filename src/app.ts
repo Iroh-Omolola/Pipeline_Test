@@ -84,18 +84,17 @@ const prevNextBtn = (type: string) => {
     fetchTableData();
   }
 };
- /* Listening for a click event on the previous button and then calling the prevNextBtn function with
+
+
+const startApp = async () => {
+  fetchTableData();
+   /* Listening for a click event on the previous button and then calling the prevNextBtn function with
   the argument "prev". */
   previousButton.addEventListener("click", () => prevNextBtn("prev"));
 
  /* Listening for a click event on the next button and then calling the prevNextBtn function with the
  argument "next". */
   nextButton.addEventListener("click", () => prevNextBtn("next"));
-
-fetchTableData();
-
-const startApp = async () => {
-  fetchTableData();
 };
 
 document.addEventListener("DOMContentLoaded", startApp);
