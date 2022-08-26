@@ -28,3 +28,5 @@ A simple web application that shows table data of users in paginated format.
 
 Heres's the outcome of the work.
 <img src="/asset/screenshot.png" />
+
+Here's the codacy badge: [![Codacy Badge](https://app.codacy.com/project/badge/Grade/d56e5313eae1431eb899e5e2cc3fa82b)](https://www.codacy.com/gh/Iroh-Omolola/Pipeline_Test/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Iroh-Omolola/Pipeline_Test&amp;utm_campaign=Badge_Grade)
