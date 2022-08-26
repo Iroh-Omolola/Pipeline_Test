@@ -26,5 +26,5 @@ A simple web application that shows table data of users in paginated format.
 13. A function was created to show if type is prev and the page is not 1, then page is decremented and fetch the table data. If the type is next, then increment the page and fetch the table data.
 14. The label shows the page in which the table data is showing.
 
-Heres's the outcome of the work
+Heres's the outcome of the work.
 <img src="/asset/screenshot.png" />
